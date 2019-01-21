@@ -4,7 +4,7 @@ using System.Data;
 
 namespace DBManager
 {
-    public sealed class DBManager : IDBManager, IDisposable 
+    public sealed class ManagerDB : IDBManager, IDisposable 
     {
     private IDbConnection idbConnection;
     private IDataReader idataReader;
@@ -14,15 +14,15 @@ namespace DBManager
     private IDbDataParameter[]idbParameters =null;
     private string strConnection;
  
-    public DBManager(){ 
+    public ManagerDB(){ 
     }
  
-    public DBManager(DataProvider providerType)
+    public ManagerDB(DataProvider providerType)
     {
       this.providerType = providerType;
     }
  
-    public DBManager(DataProvider providerType,string connectionString)
+    public ManagerDB(DataProvider providerType,string connectionString)
     {
       this.providerType = providerType;
       this.strConnection = connectionString;

@@ -11,6 +11,7 @@
     <RepositoryType>Public</RepositoryType>
     <RepositoryUrl>https://github.com/CetasLakshman/DBManager.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/CetasLakshman/DBManager</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
