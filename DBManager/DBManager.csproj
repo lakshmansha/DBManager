@@ -9,6 +9,8 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageTags>DBManager, Oracle, SQL, ODBC.</PackageTags>
     <RepositoryType>Public</RepositoryType>
+    <RepositoryUrl>https://github.com/CetasLakshman/DBManager.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/CetasLakshman/DBManager</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
