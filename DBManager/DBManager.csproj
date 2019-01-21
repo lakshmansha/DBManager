@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Lakshman.S</Authors>
+    <Company>CETAS Information Technology Private Limited</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Manage Database Connection with Multiple Tenents are SQL, Oracle, ODBC.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>DBManager, Oracle, SQL, ODBC.</PackageTags>
+    <RepositoryType>Public</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Data.Odbc" Version="4.5.0" />
+    <PackageReference Include="System.Data.OracleClient" Version="1.0.8" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>
