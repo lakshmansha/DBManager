@@ -1,10 +1,6 @@
 using System.Data;
 using System.Data.Odbc;
-using System.Data.OracleClient;
 using System.Data.SqlClient;
-
-
-
 
 namespace DBManager
 {
@@ -27,10 +23,10 @@ namespace DBManager
             case DataProvider.Odbc:
                 iDbConnection = new OdbcConnection();
                 break;
-            case DataProvider.Oracle:
-                iDbConnection = new OracleConnection();
-                break;
-            default:
+            //case DataProvider.Oracle:
+            //    iDbConnection = new OracleConnection();
+            //    break;
+                default:
             return null;
         }
         return iDbConnection;
@@ -42,15 +38,15 @@ namespace DBManager
             switch (providerType)
             {
                 case DataProvider.SqlServer:
-                  return new SqlCommand();
+                    return new SqlCommand();
                 //case DataProvider.OleDb:
                 //    return new OleDbCommand();
                 case DataProvider.Odbc:
                     return new OdbcCommand();
-                case DataProvider.Oracle:
-                  return new OracleCommand();
+                //case DataProvider.Oracle:
+                //  return new OracleCommand();
                 default:
-                return null;
+                    return null;
             }
         }
  
@@ -65,8 +61,8 @@ namespace DBManager
         //  return new OleDbDataAdapter();
         case DataProvider.Odbc:
           return new OdbcDataAdapter();
-        case DataProvider.Oracle:
-          return new OracleDataAdapter();
+        //case DataProvider.Oracle:
+        //  return new OracleDataAdapter();
         default:
           return null;
       }
@@ -98,9 +94,9 @@ namespace DBManager
         case DataProvider.Odbc:
           iDataParameter = new OdbcParameter();
           break;
-        case DataProvider.Oracle:
-          iDataParameter = new OracleParameter();
-          break;
+        //case DataProvider.Oracle:
+        //  iDataParameter = new OracleParameter();
+        //  break;
  
       }
       return iDataParameter;
@@ -131,12 +127,12 @@ namespace DBManager
             idbParams[i] = new OdbcParameter();
           }
           break;
-        case DataProvider.Oracle:
-            for (int i = 0; i < paramsCount; ++i)
-          {
-            idbParams[i] = new OracleParameter();
-          }
-          break;
+        //case DataProvider.Oracle:
+        //    for (int i = 0; i < paramsCount; ++i)
+        //  {
+        //    idbParams[i] = new OracleParameter();
+        //  }
+        //  break;
         default:
           idbParams = null;
           break;
